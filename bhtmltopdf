@@ -2,6 +2,7 @@
 #-------------------------------------------------
 # bhtmltopdf
 #   Batch convert HTML to PDF
+#   Version: 0.1
 #
 # Usage: bhtmltopdf [output_dir] < [input_file]
 #   [output_dir] defaults to pdfs/

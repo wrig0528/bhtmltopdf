@@ -1,5 +1,5 @@
 #!/bin/bash
-#-------------------------------------------------
+# ------------------------------------------------
 # bhtmltopdf
 #   Batch convert HTML to PDF
 # Version: 0.1
@@ -11,7 +11,7 @@
 #   Script will also accept source URLs at stdin
 #
 # Author: Kristiana Wright <wrig0528@umn.edu>
-#-------------------------------------------------
+# ------------------------------------------------
 
 # Set output dir
 pdf_dir="$1"

@@ -1,0 +1,30 @@
+#!/bin/bash
+#------------#
+# bhtmltopdf #
+#------------#
+
+# Set output dir
+pdf_dir="$1"
+pdf_dir=${pdf_dir:="pdfs"}
+
+# If output dir does not exist, create it
+if [ ! -d "$pdf_dir" ]; then
+  mkdir $pdf_dir
+fi
+
+# Run each source URL through the HTML API
+htm_api="https://www.instapaper.com/text?u="
+
+# Convert each HTML source to PDF
+while read src; do
+  name=$(basename $src) # Grab source name from URL
+  name=${name%.*} # Strip HTML suffix from name
+  htm="$htm_api$src"
+  pdf="$pdf_dir/$name.pdf"
+
+  echo "Processing $src"
+  wkhtmltopdf $htm $pdf
+  echo -e "Created $pdf\n"
+done
+
+echo "Batch processing complete"

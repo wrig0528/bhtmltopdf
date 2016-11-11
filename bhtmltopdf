@@ -2,7 +2,7 @@
 # ------------------------------------------------
 # bhtmltopdf
 #   Batch convert HTML to PDF
-# Version: 0.1
+# Version: 0.2
 # Dependency: wkhtmltopdf
 #
 # Usage: bhtmltopdf [output_dir] < [input_file]

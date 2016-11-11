@@ -7,7 +7,7 @@
 #
 # Usage: bhtmltopdf [output_dir] < [input_file]
 #   [output_dir] defaults to pdfs/
-#   [input_file] is list of source URLs
+#   [input_file] is list of source URLs separated by newlines
 #   Script will also accept source URLs at stdin
 #
 # Author: Kristiana Wright <wrig0528@umn.edu>
